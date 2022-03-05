@@ -13,12 +13,12 @@ class App extends Component {
       <Router>
         
         <div>
-          <Routes>
+          <switch>
           <Route exact path='/' component={ShowBookList} />
           <Route path='/create-book' component={CreateBook} />
           <Route path='/edit-book/:id' component={UpdateBookInfo} />
           <Route path='/show-book/:id' component={ShowBookDetails} />
-          </Routes>
+          </switch>
         </div>
       </Router>
     );
